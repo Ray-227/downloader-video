@@ -19,7 +19,7 @@ async function* fetchLinks(links) {
 async function merge(video, audio, path, name) {
   await createDir(path);
 
-  await ffmpeg()
+  ffmpeg()
     .addInput(video)
     .addInput(audio)
     .addOptions(['-map 0:v', '-map 1:a', '-c:v copy'])
