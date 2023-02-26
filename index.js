@@ -35,7 +35,7 @@ async function createDir(path) {
   const pathList = path.split('/')
 
   pathList.reduce((accum, path) => {
-    if (fs.existsSync(path)) return
+    if (fs.existsSync(path)) return path
 
     const accumPath = !!accum ? `${accum}/${path}` : path
 
