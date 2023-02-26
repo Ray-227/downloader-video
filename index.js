@@ -3,7 +3,7 @@ import * as fs from 'fs'
 import ffmpegPath from '@ffmpeg-installer/ffmpeg'
 import ffmpeg from 'fluent-ffmpeg'
 import process from 'process';
-import { links } from './links'
+import { links } from './links.js'
 
 
 ffmpeg.setFfmpegPath(ffmpegPath.path);
